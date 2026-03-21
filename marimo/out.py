@@ -57,7 +57,7 @@ def _(d_ang, np):
         inc = np.deg2rad(inc)
         raan = np.deg2rad(raan)
         phase = np.deg2rad(phase)
-    
+
         return 2 * np.sin(0.5 * np.sqrt(np.square(inc) + np.square(raan)) 
                    + 1 - np.cos(phase)
                    - 2 * np.log(mass))
@@ -339,7 +339,6 @@ def _(np, plt, tvector):
     plt.legend()
     plt.show()
 
-    print(f"y = {a} * exp({b} * x)")
     return
 
 
